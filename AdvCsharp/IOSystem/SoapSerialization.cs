@@ -34,8 +34,8 @@ namespace AdvCsharp.IOSystem
                 try
                 {
                     FileStream fs = new FileStream(@"D:\CSharp_Microsoft\Testfolder\SoapFile.soap", FileMode.Create, FileAccess.Write);
-                    SoapFormatter sf = new SoapFormatter();
-                    sf.Serialize(fs, stud);
+                   SoapFormatter sf = new SoapFormatter();
+                   sf.Serialize(fs, stud);
                     Console.WriteLine("Soap data added");
                     fs.Close();
                 }
@@ -49,11 +49,11 @@ namespace AdvCsharp.IOSystem
                 try
                 {
                     FileStream fs = new FileStream(@"D:\CSharp_Microsoft\Testfolder\SoapFile.soap", FileMode.Open, FileAccess.Read);
-                    SoapFormatter sf = new SoapFormatter();
-                    Student stud = (Student)sf.Deserialize(fs);
-                    Console.WriteLine(stud.RollNo);
-                    Console.WriteLine(stud.Name);
-                    Console.WriteLine(stud.Percentage);
+                     SoapFormatter sf = new SoapFormatter();
+                     Student stud = (Student)sf.Deserialize(fs);
+                     Console.WriteLine(stud.RollNo);
+                     Console.WriteLine(stud.Name);
+                             Console.WriteLine(stud.Percentage);
                     fs.Close();
                 }
                 catch (Exception ex)
@@ -69,6 +69,6 @@ namespace AdvCsharp.IOSystem
 
             }
 
-        }
+        
     }
 }
