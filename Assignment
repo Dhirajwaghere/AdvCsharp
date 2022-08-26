@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+<div id="d1">
+
+    </div> 
+
+<div id="d2">
+
+    </div> 
+
+<script>
+
+	var number= [1,2,3,4,5]
+
+	number.push(6);
+	number.pop();
+	number.unshift(0);
+	number.shift();
+	number.splice(2,2,11,22,33,44,55,66,77,88);
+	
+	var newnumber= number.slice(2,5);
+	number.sort();
+	number.reverse();
+
+
+	document.getElementById("d1").innerHTML = number;
+	document.getElementById("d2").innerHTML = newnumber;
+
+</script>
+</body>
+</html>
