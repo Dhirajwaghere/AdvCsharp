@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+<div id="d1">
+
+    </div> 
+
+<script>
+ // emp is an object & eid, ename,salary is called properties of that object,
+        // use function with an object
+        // product-> id, name,price  - display function  , discount-> 10 %
+        var emp = {
+            eid: 101,
+            ename: "Dhiraj",
+            salary: 35000,
+            display: function () {
+                return "eid :"+this.eid +" "+ " emp name :" + this.ename +" "+ " salary :" + this.salary;
+            },
+            calculation: function () {
+                var result;
+                result = this.salary + 500;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = emp.display();
+
+</script>
+
+
+
+</body>
+</html>

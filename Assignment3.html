@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+
+<div id="d1">
+
+    </div> 
+
+<script>
+
+    var mobile = {
+            brand : "samsung",
+            processor : "Octa Core",
+            camera: "Front 16MP, Back 64MP",
+            sim: "Dual Sim",
+            price: 55000,
+            display: function () {
+                return "Mobile Brand :"+this.brand + " Processor :" + this.processor + " Camera :" + this.camera + " Sim :" + this.sim + " Price :" + this.price;
+            },
+            discount: function () {
+                var dis;
+                dis = this.price * 0.10;
+                return dis;
+            },
+            display1: function () {
+                var m1;
+                m1 = this.price - this.dis ;
+            }
+            
+        }
+        document.getElementById("d1").innerHTML =mobile.display1();
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

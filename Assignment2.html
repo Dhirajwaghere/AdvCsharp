@@ -1,0 +1,39 @@
+<html>
+<head></head>
+<body>
+
+<div id="d1">
+
+    </div> 
+
+<script>
+
+var student = {
+            marathi: 95,
+            hindi: 89,
+            english: 91,
+            display: function () {
+                return "Marathi mark :"+this.marathi + " Hindi mark :" + this.hindi + " English mark :" + this.english;
+            },
+            Total: function () {
+                var total;
+                total = this.marathi + this.hindi + this.english;
+                return total;
+            },
+            Percentage: function () {
+                var per;
+                per = (this.total/3) * 100 ;
+            }
+            
+        }
+        document.getElementById("d1").innerHTML =student.Percentage();
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
