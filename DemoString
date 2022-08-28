@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+
+
+
+<script>
+		var text = "This is Demo";
+ 		var text2 = "Hello to all";
+        var text3 = "Test purpose";
+       // document.write(text.length);  // property to get the string lenth
+     //   var result = text.concat(" ", text2, " ", text3);
+     //   document.write(result);
+
+
+     var res4=text2.replace("Hello","Hii");
+        document.write(res4);
+
+        //document.write("<br/>" + text.toUpperCase());
+        //document.write("<br/>" + text.toLowerCase());
+
+        // trim ->text.trim();  ltrip, rtrim
+        // indexof('b') , lastindexof('b')
+       // var res = text.slice(3,8);
+        //document.write(res);
+
+       // var res1 = text.split(",");
+      //  console.log(res1);
+
+      //  var res2 = text.indexof("b");
+      //  document.write(res2);
+
+        //var res3 =text.lastindexof("b");
+       // document.write(res3);
+
+
+
+</script>
+
+
+
+</body>
+</html>
