@@ -1,0 +1,38 @@
+<html>
+<head></head>
+<body>
+	
+	<div id="d1"></div>
+    Enter Color :<input type="text" id="c1" />
+    <input type="button" value="Add Last" onclick="addData1()" />
+    <input type="button" value="Add First" onclick="addData2()" />
+
+
+	<script>
+		 var colors = ["red", "green", "blue", "black", "white"];
+        function display() {
+            var data = "<ol>";
+            for (var i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";  // data=<ol><li>red</li><li>green</li></ol>
+            }
+            data += "</ol>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+        }
+        function addData1() {
+            var d = document.getElementById("c1").value;
+              colors.push(d);
+            display();
+        }
+        function addData2() {
+            var d = document.getElementById("c1").value;
+            colors.unshift(d);
+            display();
+        }
+
+        display();
+
+
+	</script>
+</body>
+</html>
