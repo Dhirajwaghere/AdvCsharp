@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+	
+	<div id="d1"></div>
+
+	<script>
+ 		
+
+ 		var colors = ["red", "green", "blue", "black", "white"];
+        var data = "<ol>";
+        for (var i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";  // data=<ol><li>red</li><li>green</li></ol>
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+
+	</script>
+	</body>
+	</html>	

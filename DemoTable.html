@@ -1,0 +1,53 @@
+<html>
+<head></head>
+<body>
+	
+	<div id="d1"></div>
+
+	<script>
+   
+        var employee =
+            [
+            {
+            eid:1,
+            ename:"Rohan",
+            salary:34000
+            },
+            {
+                eid:2,
+                ename:"Suraj",
+                salary:34000
+            },
+            {
+                eid:3,
+                ename:"Kishor",
+                salary:34000
+            },
+            {
+                eid:4,
+                ename:"Raj",
+                salary:34000
+            },
+            {
+                eid:5,
+                ename:"Tushar",
+                salary: 34000
+            }
+            ]
+        
+        var data = "<table border='1'><tr><th>Id</th><th>Name</th><th>Salary</th>";
+        for (var i = 0; i < employee.length; i++) {
+            data += "<tr><td>" + employee[i].eid + "</td><td>" + employee[i].ename + "</td><td>"
+                + employee[i].salary + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+
+
+
+		</script>
+
+
+
+</body>
+</html>

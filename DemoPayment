@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+
+
+
+<input type="button" value="Pay" onclick="pay()"/>
+
+
+<script>
+
+function pay() {
+            var result = confirm("Do you wanto to make payment ?");
+            if (result == true) {
+                alert("payment done successfully");
+            }
+            else {
+                alert("Payment cancelled");
+            }
+        }
+</script>
+</body>
+</html>
