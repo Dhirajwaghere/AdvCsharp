@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>AdvCsharp.LINQ.DemoObject</StartupObject>
+    <StartupObject>AdvCsharp.IOSystem.WrittenTest1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -87,6 +87,7 @@
     <Compile Include="IOSystem\Assignment11.cs" />
     <Compile Include="IOSystem\JSONSerialization.cs" />
     <Compile Include="IOSystem\SoapSerialization.cs" />
+    <Compile Include="IOSystem\WrittenTest1.cs" />
     <Compile Include="LINQ\DemoObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
